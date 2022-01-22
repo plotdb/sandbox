@@ -1,9 +1,9 @@
 doctype html
 html
-  include /../../static/assets/lib/bootstrap.ldui/main/index.pug
+  include @/@loadingio/bootstrap.ext/index.pug
   head
-    +css("assets/lib/bootstrap/main/css/bootstrap.min.css")
-    +css("assets/lib/bootstrap.ldui/main/bootstrap.ldui.min.css")
+    +css("assets/lib/bootstrap/main/dist/css/bootstrap.min.css")
+    +css("assets/lib/@loadingio/bootstrap.ext/main/index.min.css")
     +css("css/index.css")
 
   body.p-2
@@ -31,10 +31,10 @@ html
           iframe.shadow-sm
       .text-center.m-4: .btn.btn-outline-primary(onclick="funcTest()") Functional Test
     +script("https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2CArray.isArray%2CArray.from%2CElement.prototype.classList")
-    +script("assets/lib/bootstrap.native/main/bootstrap-native.min.js")
-    +script("assets/lib/@loadingio/ldquery/main/ldq.min.js")
-    +script("assets/lib/@loadingio/debounce.js/main/debounce.min.js")
-    +script("assets/lib/ldview/main/ldview.min.js")
-    +script("assets/lib/sandbox.js/dev/sandbox.js")
-    script(src="js/interface.js")
-    script(src="js/index.js")
+    +script("assets/lib/bootstrap.native/main/dist/bootstrap-native.min.js")
+    +script("assets/lib/@loadingio/ldquery/main/index.min.js")
+    +script("assets/lib/@loadingio/debounce.js/main/index.min.js")
+    +script("assets/lib/ldview/main/index.min.js")
+    +script("assets/lib/@plotdb/sandbox.js/dev/index.min.js")
+    script(src="js/interface.js",type="module")
+    script(src="js/index.js",type="module")
