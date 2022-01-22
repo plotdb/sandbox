@@ -169,7 +169,11 @@
       });
     }
   });
-  window.sandbox = sandbox;
+  if (typeof module != 'undefined' && module !== null) {
+    module.exports = sandbox;
+  } else if (typeof window != 'undefined' && window !== null) {
+    window.sandbox = sandbox;
+  }
   function import$(obj, src){
     var own = {}.hasOwnProperty;
     for (var key in src) if (own.call(src, key)) obj[key] = src[key];

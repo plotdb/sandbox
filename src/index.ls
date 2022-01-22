@@ -86,4 +86,5 @@ sandbox.prototype = Object.create(Object.prototype) <<< do
           """
         )
 
-window.sandbox = sandbox
+if module? => module.exports = sandbox
+else if window? => window.sandbox = sandbox
