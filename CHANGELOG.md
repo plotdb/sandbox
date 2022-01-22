@@ -9,4 +9,4 @@
  - patch test code to make it work with upgraded modules
  - add `main` and `browser` field in `package.json`.
  - release with compact directory structure
-
+ - rename `@plotdb/sandbox.js` to `@plotdb/sandbox`

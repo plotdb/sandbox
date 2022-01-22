@@ -1,6 +1,6 @@
 {
   "author": "zbryikt",
-  "name": "@plotdb/sandbox.js",
+  "name": "@plotdb/sandbox",
   "license": "MIT",
   "description": "sandboxing user generated code in frontend iframe",
   "version": "0.0.2",
