@@ -1,5 +1,5 @@
 {
-  "author": "Kirby Wu",
+  "author": "zbryikt",
   "name": "@plotdb/sandbox.js",
   "license": "MIT",
   "description": "sandboxing user generated code in frontend iframe",
