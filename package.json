@@ -3,7 +3,7 @@
   "name": "@plotdb/sandbox",
   "license": "MIT",
   "description": "sandboxing user generated code in frontend iframe",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "browser": "dist/index.min.js",
   "main": "dist/index.min.js",
   "files": [

@@ -165,7 +165,7 @@
         list.map(function(it){
           return d[it[0]] = it[1];
         });
-        return this$.load("" + (d.html || '') + "\n<script>\n//<![[CDATA\n" + d.js + "\n//]]>\n</script>\n<style type=\"text/css\">\n/*<![[CDATA*/\n" + d.css + "\n/*]]>*/\n</style>");
+        return this$.load("" + (d.html || '<body></body>') + "\n<script>\n//<![[CDATA\n" + d.js + "\n//]]>\n</script>\n<style type=\"text/css\">\n/*<![[CDATA*/\n" + d.css + "\n/*]]>*/\n</style>");
       });
     }
   });

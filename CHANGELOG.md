@@ -1,5 +1,10 @@
 # Change Logs
 
+## v0.0.3
+
+ - add a dummy body if html is empty, so script can be run after body
+
+
 ## v0.0.2
 
  - check `module` and `window` before exporting
